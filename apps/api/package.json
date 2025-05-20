@@ -8,9 +8,9 @@
     "db:studio": "pnpm env:load prisma studio",
     "env:load": "dotenv -e ../../.env --",
     "build": "tsup",
-    "build:prod": "pnpm install —frozen-lockfile; pnpm run build",
+    "build:prod": "npm install —frozen-lockfile; npm run build",
     "start": "node dist/http/server.js",
-    "start:prod": "pnpm prisma migrate deploy; pnpm prisma generate; pnpm run start"
+    "start:prod": "npm prisma migrate deploy; npm prisma generate; npm run start"
   },
   "dependencies": {
     "@fastify/cors": "^10.0.2",
